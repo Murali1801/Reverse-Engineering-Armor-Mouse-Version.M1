@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="200,200" caption="0,0,0,0" bktrans="true">
+	<VerticalLayout name="root">
+		<Ring name="ring" height="200" width="200" bkimage="skins/ring.png"/>
+   </VerticalLayout>
+</Window>

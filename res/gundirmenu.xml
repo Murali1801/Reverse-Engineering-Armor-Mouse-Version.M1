@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window  showshadow="true" >
+<!-- Menu样式 -->
+<Default name="Menu" shared="true" value="bordersize=&quot;1&quot; borderround=&quot;0,0&quot; bordercolor=&quot;0xFF26bbee&quot; inset=&quot;2,2,2,2&quot; bkcolor=&quot;0xFF000000&quot; itemtextpadding=&quot;5,0,10,0&quot; itemtextcolor=&quot;0xFFFFFFFF&quot; itemhottextcolor=&quot;0xFFFFFFFF&quot; itemhotbkcolor=&quot;0xFF26bbee&quot; itemselectedbkcolor=&quot;0xFF26bbee&quot;" />
+<!-- ExplandIcon样式 -->
+<Default name="ExplandIcon" shared="true" value="skins/menu_expand.png" />
+<Default name="MenuElement" share="true" value="height=&quot;25&quot; width=&quot;92&quot;"/>
+  <Menu>
+    <MenuElement name="rename_gun_dir" text="rename_text" resourcetext="true"/>
+    <MenuElement name="import_gun_dir" text="import_profile_text" resourcetext="true"/>
+	<MenuElement name="export_gun_dir" text="export_profile_text" resourcetext="true"/>
+	<MenuElement name="export_pw_gun_dir" text="export_pw_text" resourcetext="true"/>
+  </Menu>
+</Window>

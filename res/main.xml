@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window size="1280,750" caption="0,0,0,76" gdiplustext="true">
+	<Font shared="true" id="0" name="Arial"  size="15" default="true"/>
+	<Font shared="true" id="1" name="Arial" size="17" bold="false"/>
+	<Font shared="true" id="2" name="Arial" size="20" bold="false"/>
+	<Font shared="true" id="3" name="Arial" size="12" bold="false"/>
+	<Font shared="true" id="4" name="Arial" size="10" bold="false"/>
+	<Default name="VScrollBar" shared="true" value="width=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='skins/vscrollbar.png' source='0,60,8,100' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='skins/vscrollbar.png' source='8,60,16,100' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='skins/vscrollbar.png' source='16,60,24,100' corner='0,4,0,4'&quot; railnormalimage=&quot;&quot; railhotimage=&quot;&quot; railpushedimage=&quot;&quot; raildisabledimage=&quot;&quot; bknormalimage=&quot;file='skins/vscrollbar.png' source='0,0,8,60' corner='0,4,0,4'&quot; bkhotimage=&quot;&quot; bkpushedimage=&quot;&quot; bkdisabledimage=&quot;&quot; "/>
+	<Default name="HScrollBar" shared="true" value="height=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='skins/hscrollbar.png' source='0,0,32,8' corner='4,0,4,0'&quot; thumbhotimage=&quot;file='skins/hscrollbar.png' source='32,8,64,16' corner='4,0,4,0'&quot; thumbpushedimage=&quot;file='skins/hscrollbar.png' source='32,16,64,24' corner='4,0,4,0'&quot; railnormalimage=&quot;&quot; railhotimage=&quot;&quot; railpushedimage=&quot;&quot; raildisabledimage=&quot;&quot; bknormalimage=&quot;file='skins/hscrollbar.png' source='0,0,32,8' corner='4,0,4,0'&quot; bkhotimage=&quot;&quot; bkpushedimage=&quot;&quot; bkdisabledimage=&quot;&quot; "/>
+
+	<Style name="center_button" shared="true" value="align=&quot;center&quot; valign=&quot;vcenter&quot; resourcetext=&quot;true&quot; textcolor=&quot;#FFFFFFFF&quot; hottextcolor=&quot;#0xFF26bbee&quot; pushedtextcolor=&quot;0xFFFFFFFF&quot;"/>
+    <Style name="bottom_button" shared="true" value="font=&quot;1&quot; align=&quot;center&quot; valign=&quot;vcenter&quot; textpadding=&quot;5,50,5,2&quot; resourcetext=&quot;true&quot; textcolor=&quot;#FF5F5F5F&quot; hottextcolor=&quot;#0xFF26bbee&quot; pushedtextcolor=&quot;0xFF26bbee&quot; selectedtextcolor=&quot;#0xFF26bbee&quot; font=&quot;1&quot;"/>
+	<Style name="left_button" shared="true" value="font=&quot;0&quot; align=&quot;left&quot; valign=&quot;vcenter&quot; textpadding=&quot;25,2,0,0&quot; float=&quot;true&quot; resourcetext=&quot;true&quot; textcolor=&quot;#FF6E6E6E&quot; hottextcolor=&quot;#FF2678D8&quot; selectedtextcolor=&quot;#FFFFFFFF&quot;"/>
+	<Style name="main_tap" shared="true" value="font=&quot;0&quot; align=&quot;center&quot; valign=&quot;vcenter&quot; resourcetext=&quot;true&quot; textcolor=&quot;#FFFFFFFF&quot; hottextcolor=&quot;#0xFF26bbee&quot; pushedtextcolor=&quot;0xFF26bbee&quot; selectedtextcolor=&quot;#0xFF26bbee&quot;"/>
+	<Style name="profile_style" shared="true" value="font=&quot;0&quot; align=&quot;center&quot; valign=&quot;vcenter&quot; wordbreak=&quot;true&quot; wordbreakvcenter=&quot;true&quot; width=&quot;100&quot; height=&quot;105&quot; textpadding=&quot;9,26,16,6&quot; textcolor=&quot;0xFF969600&quot; hottextcolor=&quot;0xFFFFFF00&quot; selectedtextcolor=&quot;#FFFFFF00&quot; normalimage=&quot;res='skins/profile1.png' dest='0,20,93,102'&quot; hotimage=&quot;res='skins/profile2.png' dest='0,20,93,102'&quot; pushedimage=&quot;res='skins/profile3.png' dest='0,20,93,102'&quot; selectedimage=&quot;res='skins/profile4.png' dest='0,0,93,100'&quot;"/>
+    <Style name="list_style" shared="true"
+           value="itemalign=&quot;center&quot; itemlinecolor=&quot;#FF5F5F5F&quot; itemdisabledbkcolor=&quot;0x00000000&quot; itemselectedbkcolor=&quot;#FF26bbee&quot; itemhotbkcolor=&quot;#7F26bbee&quot; itemshowrowline=&quot;true&quot; itemshowcolumnline=&quot;true&quot; itemtextcolor=&quot;#FF000000&quot; itemselectedtextcolor=&quot;#FF000000&quot; itemhottextcolor=&quot;#FF000000&quot;" />
+	
+	<Style name="main_btn_style" shared="true" 
+		value="font=&quot;1&quot; align=&quot;center&quot; valign=&quot;vcenter&quot; endellipsis=&quot;true&quot; resourcetext=&quot;true&quot; textcolor=&quot;#FF000000&quot; hottextcolor=&quot;0xFF26bbee&quot; pushedtextcolor=&quot;0xFF26bbee&quot; selectedtextcolor=&quot;0xFF26bbee&quot; hotimage=&quot;skins/guangyun.png&quot; pushedimage=&quot;skins/guangyun.png&quot; selectedimage=&quot;skins/guangyun.png&quot;"/>
+		
+	<Style name="mouse_key_style" shared="true" 
+		value="font=&quot;0&quot; align=&quot;center&quot; valign=&quot;vcenter&quot; endellipsis=&quot;true&quot; resourcetext=&quot;true&quot; textcolor=&quot;#FF000000&quot; normalimage=&quot;skins/button_1.png&quot; hotimage=&quot;skins/button_2.png&quot; pushedimage=&quot;skins/button_3.png&quot; selectedimage=&quot;skins/button_3.png&quot;"/>
+	
+	<Style name="radio_style" shared="true" value="font=&quot;0&quot; align=&quot;left&quot; valign=&quot;vcenter&quot; resourcetext=&quot;true&quot; textpadding=&quot;15,0,0,0&quot; textcolor=&quot;#FF000000&quot; hottextcolor=&quot;0xFF26bbee&quot; pushedtextcolor=&quot;0xFF26bbee&quot; selectedtextcolor=&quot;0xFF26bbee&quot; normalimage=&quot;res='skins/radio_1.png' dest='0,6,12,18'&quot; hotimage=&quot;res='skins/radio_2.png' dest='0,6,12,18'&quot; pushedimage=&quot;res='skins/radio_3.png' dest='0,6,12,18'&quot; selectedimage=&quot;res='skins/radio_3.png' dest='0,6,12,18'&quot;"/>
+	
+	<Style name="dpi_setting_btn_style" shared="true" value="align=&quot;left&quot; valign=&quot;vcenter&quot; resourcetext=&quot;true&quot; textcolor=&quot;0xFF5F5F5F&quot; hottextcolor=&quot;0xFF26bbee&quot; pushedtextcolor=&quot;0xFF26bbee&quot; selectedtextcolor=&quot;0xFF26bbee&quot; cursor=&quot;hand&quot;"/>
+	
+	<Style name="combo_style" shared="true" 
+		value="dropboxsize=&quot;0,300&quot; align=&quot;left&quot; valign=&quot;vcenter&quot; textcolor=&quot;#FF000000&quot; textpadding=&quot;10,0,0,0&quot; normalimage=&quot;res='skins/combo_1.png' corner='2,2,40,2'&quot; hotimage=&quot;res='skins/combo_2.png' corner='2,2,40,2'&quot; pushedimage=&quot;res='skins/combo_2.png' corner='2,2,40,2'&quot; itemtextpadding=&quot;10,0,0,0&quot; itemalign=&quot;left&quot; itemvalign=&quot;vcenter&quot; itembkcolor=&quot;0xFF000000&quot; itemhotbkcolor=&quot;0x7F26bbee&quot; itemselectedbkcolor=&quot;0xFF26bbee&quot; itemtextcolor=&quot;0xFFFFFFFF&quot;"/>
+	
+	<Style name="kb_key_style" shared="true"
+			value="float=&quot;true&quot; cursor=&quot;hand&quot; enablemove=&quot;true&quot; width=&quot;16&quot; height=&quot;18&quot; hotimage=&quot;res='skins/key1_1.png' corner='2,2,2,2'&quot; pushedimage=&quot;res='skins/key1_1.png' corner='2,2,2,2'&quot; selectedimage=&quot;res='skins/key1_1.png' corner='2,2,2,2'&quot;"/>
+	<Style name="edit_style" shared="true"
+		value="wanttab=&quot;false&quot; wantreturn=&quot;false&quot; wantctrlreturn=&quot;false&quot; multiline=&quot;false&quot; font=&quot;3&quot; align=&quot;center&quot; bkcolor=&quot;#FFFFFFFF&quot; textcolor=&quot;#FF000000&quot; nativebkcolor=&quot;0xFFFFFFFF&quot;"/>
+	
+	<Style name="zidan_style" shared="true" value="group=&quot;zidan_group&quot; width=&quot;12&quot; normalimage=&quot;res='skins/zidan_1.png'&quot; hotimage=&quot;res='skins/zidan_2.png'&quot; pushedimage=&quot;res='skins/zidan_2.png'&quot; selectedimage=&quot;res='skins/zidan_2.png'&quot;"/>
+	
+	<Style name="checkbox_style" shared="true" value="resourcetext=&quot;true&quot; align=&quot;left&quot; valign=&quot;vcenter&quot; textpadding=&quot;22,0,0,0&quot; textcolor=&quot;0xFFFFFFFF&quot; hottextcolor=&quot;0xFF26bbee&quot; pushedtextcolor=&quot;0xFF26bbee;&quot; selectedtextcolor=&quot;0xFF26bbee;&quot; normalimage=&quot;res='skins/checkbox_1.png' dest='0,3,18,21'&quot; hotimage=&quot;res='skins/checkbox_2.png' dest='0,3,18,21'&quot; pushedimage=&quot;res='skins/checkbox_2.png' dest='0,3,18,21'&quot; selectedimage=&quot;res='skins/checkbox_3.png' dest='0,3,18,21'&quot; EnableAutoCheck=&quot;true&quot;"/>
+	
+	<VerticalLayout name="root" bkimage="res='skins\bk/bk.jpg'">
+		<Control height="26"/>
+		<HorizontalLayout height="50">
+			<Button name="logo_btn" width="180" padding="32,0,0,0"  normalimage="skins/logo_1.png" hotimage="skins/logo_2.png" pushedimage="skins/logo_2.png" />
+			<Option name="key_btn" text="key_text" width="150"padding="170,0,0,0" style="main_btn_style" group="main_btn_group" selected="true"/>
+			<Option name="performance_btn" text="performance_text" width="150" padding="130,0,0,0" style="main_btn_style" group="main_btn_group"/>
+			<Option name="light_btn" text="light_text" width="150" padding="60,0,0,0" style="main_btn_style" group="main_btn_group"  visible="false"/>
+			<Option name="macro_btn" text="macro_manager_text" width="150" padding="130,0,0,0" style="main_btn_style" group="main_btn_group"/>
+			<Option name="gun_btn" text="gun_manager_text" width="150"  padding="80,0,0,0" style="main_btn_style" group="main_btn_group" visible="false"/>
+		</HorizontalLayout>
+		
+		<TabLayout name="config_tab">		
+			<HorizontalLayout>				
+				<VerticalLayout width="320"  padding="30,10,0,10">
+					<Label text="select_profile_text" height="34" resourcetext="true" align="left" valign="vcenter" textcolor="0xFF000000" padding="10,10,0,0"/>
+					<Combo name="profile_combo" height="34" style="combo_style" padding="10,5,10,0" dropbox="bordercolor=&quot;0xFF26bbee&quot; bordersize=&quot;1&quot; bkcolor=&quot;#FF000000&quot;"/>
+					<HorizontalLayout height="34" padding="10,10,10,0">
+						<Button name="btn_add_profile" width="94" normalimage="skins/add_1.png" hotimage="skins/add_2.png" pushedimage="skins/add_3.png" disabledimage="skins/add_4.png"/>
+						<Control/>
+						<Button name="btn_delete_profile" width="94" normalimage="skins/delete_1.png" hotimage="skins/delete_2.png" pushedimage="skins/delete_3.png" disabledimage="skins/delete_4.png"/>
+						<Control/>
+						<Button name="btn_menu_profile" width="94" normalimage="skins/menu_1.png" hotimage="skins/menu_2.png" pushedimage="skins/menu_3.png" disabledimage="skins/menu_4.png"/>
+					</HorizontalLayout>
+					<Label text="rename_profile_text" height="34" resourcetext="true" align="left" valign="vcenter" textcolor="0xFF000000" padding="10,10,0,0"/>
+					<Edit name="edit_profile_name" height="34" maxchar="30" bkcolor="0x00000000" normalimage="skins/edit_1.png" hotimage="skins/edit_2.png" focusedimage="skins/edit_2.png" textcolor="0xFF000000" align="left" valign="vcenter" padding="10,5,10,0" nativebkcolor="0x5F000000"/>
+					<Button name="btn_reset_profile" text="reset_text" height="34" resourcetext="true" textcolor="0xFF000000" hottextcolor="0xFF26bbee" pushedtextcolor="0xFF26bbee" normalimage="skins/reset_1.png" hotimage="skins/reset_2.png" pushedimage="skins/reset_3.png" padding="10,30,10,0"/>
+					<Control height="100"/>
+					<Button name="btn_apply" text="apply_text" height="34" resourcetext="true" textcolor="0xFF000000" hottextcolor="0xFF26bbee" pushedtextcolor="0xFF26bbee" normalimage="skins/reset_1.png" hotimage="skins/reset_2.png" pushedimage="skins/reset_3.png" padding="10,30,10,0"/>
+				</VerticalLayout>
+			
+				<TabLayout name="main_tab">
+					<VerticalLayout name="button_ver" virtualwnd="ButtonPage">
+						<Include source="buttonpage.xml"/>
+					</VerticalLayout>
+					
+					<VerticalLayout name="performance_ver" virtualwnd="PerformancePage">
+						<Include source="performancepage.xml"/>
+					</VerticalLayout>
+					
+					<VerticalLayout name="light_ver" virtualwnd="LightPage">
+						<Include source="lightpage.xml"/>
+					</VerticalLayout>
+				</TabLayout>
+			</HorizontalLayout>
+		
+			<VerticalLayout name="macro_ver" virtualwnd="MacroPage">
+				<Include source="macropage.xml"/>
+			</VerticalLayout>
+			
+			<VerticalLayout name="gun_ver" virtualwnd="GunPage">
+				<Include source="gun.xml"/>
+			</VerticalLayout>
+		</TabLayout>
+		<VerticalLayout inset="0,-1,0,0" float="true" height="40" width="80" floatalign="right,top">
+			<Control height="18"/>
+			<HorizontalLayout>
+				<Button name="skin_btn" visible="false" width="22" height="22" normalimage="skins/skinbtn_1.png" hotimage="skins/skinbtn_2.png" pushedimage="skins/skinbtn_3.png" disabledimage="skins/skinbtn_4.png"/>
+				<Button name="setting_btn" visible="false" width="22" height="22" padding="5,0,0,0" normalimage="skins/setting_1.png" hotimage="skins/setting_2.png" pushedimage="skins/setting_3.png" disabledimage="skins/setting_4.png"/>
+				<Button name="min_btn" width="22" height="22" padding="5,0,0,0" normalimage="skins/min_1.png" hotimage="skins/min_2.png" pushedimage="skins/min_3.png" disabledimage="skins/min_4.png"/>
+				<Button name="exit_btn" width="22" height="22" padding="5,0,0,0" normalimage="skins/close_1.png" hotimage="skins/close_2.png" pushedimage="skins/close_3.png" disabledimage="skins/close_4.png"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+		
+		<VerticalLayout name="disable_window_ver" width="1280" height="750" bkcolor="0x7F000000" float="true" floatalign="left,top" visible="false"/>
+		<VerticalLayout name="ring_ver" width="1280" height="750" bkcolor="0x7F000000" float="true" floatalign="left,top" visible="false">		
+			<Ring name="ring" height="200" width="200" bkimage="skins/ring.png" float="true" floatalign="center,vcenter"/>
+		</VerticalLayout>
+    </VerticalLayout>
+</Window>

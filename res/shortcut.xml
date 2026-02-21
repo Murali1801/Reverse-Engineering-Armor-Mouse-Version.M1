@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="448,288" caption="0,0,0,75" bktrans="true">
+	<VerticalLayout name="root" bkcolor="0xCF000000" bordersize="1" bordercolor="0xFF26bbee">
+		<Control height="10"/>
+		<HorizontalLayout height="22">
+			<Control/>
+			<Button name="exit_btn" width="22" normalimage="skins/close_1.png" hotimage="skins/close_2.png" pushedimage="skins/close_2.png"/>
+			<Control width="10"/>
+		</HorizontalLayout>
+		
+		<Label text="shorcut_title_text" resourcetext="true" height="30" align="left" valign="vcenter" textcolor="0xFFFFFFFF" padding="30,0,0,0"/>
+		<Control height="50"/>
+		<HorizontalLayout height="24">
+			<Control width="100"/>
+			<CheckBox name="check_flag_1" text="ctrl_text" width="100" style="checkbox_style"/>
+			<CheckBox name="check_flag_2" text="shift_text" width="100" style="checkbox_style" padding="20,0,0,0"/>
+			<CheckBox name="check_flag_3" text="alt_text" width="100" style="checkbox_style" padding="20,0,0,0"/>
+		</HorizontalLayout>
+		
+		<HorizontalLayout height="24" padding="0,20,0,0">
+			<Control width="100"/>
+			<CheckBox name="check_flag_4" text="win_text" width="100" style="checkbox_style"/>
+			<Edit name="edit_key" width="100" font="3" bkcolor="0xFF000000" readonly="true" maxchar="3" normalimage="res='skins/edit_1.png' corner='2,2,2,2'" hotimage="res='skins/edit_2.png' corner='2,2,2,2'" focusedimage="res='skins/edit_2.png' corner='2,2,2,2'" textcolor="0xFFFFFFFF" align="center" valign="vcenter" nativebkcolor="0xFF000000"/>
+			<Label text="input_key_text" resourcetext="true" width="100" align="left" valign="vcenter" textcolor="0xFFFFFFFF" padding="10,0,0,0"/>
+		</HorizontalLayout>
+		
+		<Control/>
+		<HorizontalLayout height="25">
+			<Control/>
+			<Button name="ok_btn" text="ok_text" style="center_button" width="100"
+				bordersize="1" bordercolor="0xFF26bbee" hotbkcolor="0x7F26bbee" pushedbkcolor="0xFF26bbee"/>
+				
+			<Button name="cancel_btn" text="cancel_text" style="center_button" width="100" padding="20,0,0,0"
+				bordersize="1" bordercolor="0xFF26bbee" hotbkcolor="0x7F26bbee" pushedbkcolor="0xFF26bbee"/>	
+			<Control/>
+		</HorizontalLayout>	
+		<Control height="10"/>
+   </VerticalLayout>
+</Window>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="448,288" caption="0,0,0,75" bktrans="true">
+	<VerticalLayout name="root" bkcolor="0xCF000000" bordersize="1" bordercolor="0xFF26bbee">
+		<Control height="10"/>
+		<HorizontalLayout height="22">
+			<Control/>
+			<Button name="exit_btn" width="22" normalimage="skins/close_1.png" hotimage="skins/close_2.png" pushedimage="skins/close_2.png"/>
+			<Control width="10"/>
+		</HorizontalLayout>
+		
+		<HorizontalLayout height="30" padding="40,0,40,0">
+			<Label text="current_color_text" resourcetext="true" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF"/>
+			<Control name="current_color_control"  width="30" bkcolor="0xFFFF0000"/>
+			<Control/>
+			<Label text="R:" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF"/>
+			<Edit name="r_edit" width="40" padding="5,5,5,5" font="3" numberonly="true" maxchar="3" align="center" valign="vcenter"/>
+			<Label text="G:" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF"/>
+			<Edit name="g_edit" width="40" padding="5,5,5,5" font="3" numberonly="true" maxchar="3" align="center" valign="vcenter"/>
+			<Label text="B:" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF"/>
+			<Edit name="b_edit" width="40" padding="5,5,0,5" font="3" numberonly="true" maxchar="3" align="center" valign="vcenter"/>
+			<Control width="20"/>
+		</HorizontalLayout>
+		<ColorPalette name="color_Pallet" height="170" palletheight="150" barheight="14" thumbimage="skins/cursor.png" padding="40,10,40,0" sendmove="true"/>
+		<Control/>
+		<HorizontalLayout height="25">
+			<Control/>
+			<Button name="ok_btn" text="ok_text" style="center_button" width="100"
+				bordersize="1" bordercolor="0xFF26bbee" hotbkcolor="0x7F26bbee" pushedbkcolor="0xFF26bbee"/>
+				
+			<Button name="cancel_btn" text="cancel_text" style="center_button" width="100" padding="20,0,0,0"
+				bordersize="1" bordercolor="0xFF26bbee" hotbkcolor="0x7F26bbee" pushedbkcolor="0xFF26bbee"/>	
+			<Control/>
+		</HorizontalLayout>	
+		<Control height="10"/>
+   </VerticalLayout>
+</Window>

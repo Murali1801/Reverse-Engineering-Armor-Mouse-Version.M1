@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window  showshadow="true" >
+<!-- Menu样式 -->
+<Default name="Menu" shared="true" value="bordersize=&quot;1&quot; borderround=&quot;0,0&quot; bordercolor=&quot;0xFF26bbee&quot; inset=&quot;2,2,2,2&quot; bkcolor=&quot;0xFF000000&quot; itemtextpadding=&quot;5,0,0,0&quot; itemtextcolor=&quot;0xFFFFFFFF&quot; itemhottextcolor=&quot;0xFFFFFFFF&quot; itemhotbkcolor=&quot;0xFF26bbee&quot; itemselectedbkcolor=&quot;0xFF26bbee&quot;" />
+<!-- ExplandIcon样式 -->
+<Default name="ExplandIcon" shared="true" value="skins/menu_expand.png" />
+<Default name="MenuElement" share="true" value="height=&quot;25&quot; width=&quot;225&quot;"/>
+  <Menu>
+
+	<MenuElement name="dpi1" text="dpi1_text" resourcetext="true" expland="true" >
+		
+    		<MenuElement name="click" text="click_text" resourcetext="true"/>
+		<MenuElement name="menu" text="menu_text" resourcetext="true"/>
+		<MenuElement name="scroll" text="scroll_text" resourcetext="true"/>
+		<MenuElement name="forward" text="forward_text" resourcetext="true"/>
+		<MenuElement name="backward" text="backward_text" resourcetext="true"/>
+		<MenuElement name="scroll_up" text="scroll_up_text" resourcetext="true"/>
+		<MenuElement name="scroll_down" text="scroll_down_text" resourcetext="true"/>
+	</MenuElement>
+	
+	<MenuElement name="dpi2" text="dpi2_text" resourcetext="true" expland="true" >
+		<MenuElement name="double_click" text="double_click_text" resourcetext="true"/>
+		<MenuElement name="three_click" text="three_click_text" resourcetext="true"/>
+		<MenuElement name="light_mode_switch" text="light_mode_switch_text" resourcetext="true"/>
+		<MenuElement name="juji" text="juji_text" resourcetext="true"/>
+	</MenuElement>
+
+		<MenuElement name="mode_switch" text="mode_switch_text" resourcetext="true"  visible="false" />
+		<MenuElement name="send_gun" text="send_gun_text" resourcetext="true"  visible="false" />
+	
+	<MenuElement name="button_off" text="button_off_text" resourcetext="true"/>
+	<MenuElement name="shortcut" text="shortcut_text" resourcetext="true"/>
+	<MenuElement name="select_macro" text="select_macro_text" resourcetext="true"/>
+	<MenuElement name="select_gun" text="select_gun_text" resourcetext="true" visible="false" />
+	
+	<MenuElement name="dpi" text="dpi_text" resourcetext="true" expland="true" >
+		<MenuElement name="dpi_cycle" text="dpi_cycle_text" resourcetext="true"/>
+		<MenuElement name="dpi_up" text="dpi_up_text" resourcetext="true"/>
+		<MenuElement name="dpi_down" text="dpi_down_text" resourcetext="true"/>
+	</MenuElement>	
+	
+	<MenuElement name="report" text="report_text" resourcetext="true" expland="true" >
+		<MenuElement name="report_cycle" text="report_cycle_text" resourcetext="true"/>
+		<MenuElement name="report_up" text="report_up_text" resourcetext="true"/>
+		<MenuElement name="report_down" text="report_down_text" resourcetext="true"/>
+	</MenuElement>	
+	
+	<MenuElement name="multimedia" text="multimedia_text" resourcetext="true" expland="true" >
+		<MenuElement name="media_player" text="media_player_text" resourcetext="true"/>
+		<MenuElement name="play_pause" text="play_pause_text" resourcetext="true"/>
+		<MenuElement name="media_stop" text="media_stop_text" resourcetext="true"/>
+		<MenuElement name="pre_track" text="pre_track_text" resourcetext="true"/>
+		<MenuElement name="next_track" text="next_track_text" resourcetext="true"/>
+		<MenuElement name="volume_up" text="volume_up_text" resourcetext="true"/>
+		<MenuElement name="volume_down" text="volume_down_text" resourcetext="true"/>
+		<MenuElement name="mute" text="mute_text" resourcetext="true"/>
+	</MenuElement>
+	
+	<MenuElement name="windows" text="windows_text" resourcetext="true" expland="true" >
+		<MenuElement name="browser_home" text="browser_home_text" resourcetext="true"/>
+		<MenuElement name="browser_favorites" text="browser_favorites_text" resourcetext="true"/>
+		<MenuElement name="browser_forward" text="browser_forward_text" resourcetext="true"/>
+		<MenuElement name="browser_backward" text="browser_backward_text" resourcetext="true"/>
+		<MenuElement name="browser_stop" text="browser_stop_text" resourcetext="true"/>
+		<MenuElement name="browser_refresh" text="browser_refresh_text" resourcetext="true"/>
+		<MenuElement name="browser_search" text="browser_search_text" resourcetext="true"/>
+		<MenuElement name="email" text="email_text" resourcetext="true"/>
+		<MenuElement name="calculator" text="calculator_text" resourcetext="true"/>
+		<MenuElement name="my_computer" text="my_computer_text" resourcetext="true"/>
+	</MenuElement>
+	
+	<MenuElement name="office_shortcut" text="office_shortcut_text" resourcetext="true" expland="true" >
+		<MenuElement name="cut" text="cut_text" resourcetext="true"/>
+		<MenuElement name="copy" text="copy_text" resourcetext="true"/>
+		<MenuElement name="paste" text="paste_text" resourcetext="true"/>
+		<MenuElement name="open" text="open_text" resourcetext="true"/>
+		<MenuElement name="save" text="save_text" resourcetext="true"/>
+		<MenuElement name="find" text="find_text" resourcetext="true"/>
+		<MenuElement name="redo" text="redo_text" resourcetext="true"/>
+		<MenuElement name="select_all" text="select_all_text" resourcetext="true"/>
+		<MenuElement name="new" text="new_text" resourcetext="true"/>
+		<MenuElement name="print" text="print_text" resourcetext="true"/>
+	</MenuElement>
+	
+	<MenuElement name="advance_function" text="advance_function_text" resourcetext="true" expland="true" >
+		<MenuElement name="swap_windows" text="swap_windows_text" resourcetext="true"/>
+		<MenuElement name="close_windows" text="close_windows_text" resourcetext="true"/>
+		<MenuElement name="show_desktop" text="show_desktop_text" resourcetext="true"/>
+		<MenuElement name="lock_pc" text="lock_pc_text" resourcetext="true"/>
+		<MenuElement name="run_command" text="run_command_text" resourcetext="true"/>
+	</MenuElement>
+  </Menu>
+</Window>

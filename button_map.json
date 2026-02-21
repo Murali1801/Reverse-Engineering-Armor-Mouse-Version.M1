@@ -1,0 +1,326 @@
+{
+    "NAV_KEYS": [
+        570,
+        62
+    ],
+    "NAV_PERF": [
+        920,
+        62
+    ],
+    "NAV_MACRO": [
+        1277,
+        60
+    ],
+    "PROFILE_SEL": [
+        223,
+        195
+    ],
+    "PROFILE_ADD": [
+        108,
+        243
+    ],
+    "PROFILE_DEL": [
+        235,
+        245
+    ],
+    "PROFILE_MENU": [
+        366,
+        242
+    ],
+    "RESET": [
+        237,
+        428
+    ],
+    "APPLY": [
+        237,
+        632
+    ],
+    "POPUP_OK": [
+        725,
+        607
+    ],
+    "POPUP_CANCEL": [
+        872,
+        606
+    ],
+    "POPUP_CLOSE": [
+        1055,
+        311
+    ],
+    "MENU_IMPORT": [
+        366,
+        285
+    ],
+    "MENU_EXPORT": [
+        362,
+        315
+    ],
+    "KEY_BTN_1": [
+        1275,
+        187
+    ],
+    "KEY_BTN_2": [
+        1277,
+        307
+    ],
+    "KEY_BTN_3": [
+        1278,
+        426
+    ],
+    "KEY_BTN_4": [
+        1277,
+        548
+    ],
+    "KEY_BTN_5": [
+        1282,
+        667
+    ],
+    "ASSIGN_BASIC": [
+        1276,
+        231
+    ],
+    "ASSIGN_HIGH_ORDER": [
+        1271,
+        262
+    ],
+    "ASSIGN_OFF": [
+        1272,
+        295
+    ],
+    "ASSIGN_SHORTCUT": [
+        1276,
+        325
+    ],
+    "ASSIGN_MACRO": [
+        1273,
+        355
+    ],
+    "ASSIGN_DPI": [
+        1276,
+        387
+    ],
+    "ASSIGN_REPORT": [
+        1268,
+        422
+    ],
+    "ASSIGN_MEDIA": [
+        1266,
+        447
+    ],
+    "ASSIGN_WINDOWS": [
+        1268,
+        477
+    ],
+    "ASSIGN_OFFICE": [
+        1270,
+        512
+    ],
+    "ASSIGN_ADVANCE": [
+        1270,
+        543
+    ],
+    "BASIC_LEFT": [
+        1468,
+        232
+    ],
+    "BASIC_RIGHT": [
+        1471,
+        265
+    ],
+    "BASIC_MIDDLE": [
+        1477,
+        297
+    ],
+    "BASIC_FORWARD": [
+        1483,
+        327
+    ],
+    "BASIC_BACKWARD": [
+        1483,
+        366
+    ],
+    "BASIC_SCROLL_UP": [
+        1486,
+        391
+    ],
+    "BASIC_SCROLL_DOWN": [
+        1485,
+        425
+    ],
+    "HIGH_ORDER_DOUBLE": [
+        1486,
+        266
+    ],
+    "HIGH_ORDER_THREE": [
+        1491,
+        296
+    ],
+    "HIGH_ORDER_LIGHT": [
+        1496,
+        327
+    ],
+    "HIGH_ORDER_SNIPER": [
+        1493,
+        361
+    ],
+    "DPI_CYCLE": [
+        1480,
+        393
+    ],
+    "DPI_PLUS": [
+        1483,
+        421
+    ],
+    "DPI_MINUS": [
+        1478,
+        457
+    ],
+    "REPORT_CYCLE": [
+        1477,
+        420
+    ],
+    "REPORT_PLUS": [
+        1478,
+        450
+    ],
+    "REPORT_MINUS": [
+        1483,
+        486
+    ],
+    "MEDIA_PLAYER": [
+        1478,
+        447
+    ],
+    "MEDIA_PLAY_PAUSE": [
+        1475,
+        480
+    ],
+    "MEDIA_STOP": [
+        1477,
+        517
+    ],
+    "MEDIA_PREV": [
+        1478,
+        546
+    ],
+    "MEDIA_NEXT": [
+        1478,
+        575
+    ],
+    "MEDIA_VOL_PLUS": [
+        1483,
+        610
+    ],
+    "MEDIA_VOL_MINUS": [
+        1485,
+        636
+    ],
+    "MEDIA_MUTE": [
+        1488,
+        670
+    ],
+    "WIN_HOME": [
+        1495,
+        483
+    ],
+    "WIN_FAV": [
+        1498,
+        511
+    ],
+    "WIN_FWD": [
+        1500,
+        545
+    ],
+    "WIN_BACK": [
+        1503,
+        576
+    ],
+    "WIN_STOP": [
+        1503,
+        616
+    ],
+    "WIN_REFRESH": [
+        1498,
+        641
+    ],
+    "WIN_SEARCH": [
+        1500,
+        671
+    ],
+    "WIN_EMAIL": [
+        1500,
+        705
+    ],
+    "WIN_CALC": [
+        1502,
+        735
+    ],
+    "WIN_MY_PC": [
+        1505,
+        765
+    ],
+    "OFFICE_CUT": [
+        1485,
+        516
+    ],
+    "OFFICE_COPY": [
+        1487,
+        546
+    ],
+    "OFFICE_PASTE": [
+        1488,
+        576
+    ],
+    "OFFICE_OPEN": [
+        1497,
+        610
+    ],
+    "OFFICE_SAVE": [
+        1497,
+        641
+    ],
+    "OFFICE_FIND": [
+        1493,
+        671
+    ],
+    "OFFICE_REDO": [
+        1492,
+        702
+    ],
+    "OFFICE_SELECT_ALL": [
+        1492,
+        731
+    ],
+    "OFFICE_NEW": [
+        1491,
+        766
+    ],
+    "OFFICE_PRINT": [
+        1491,
+        796
+    ],
+    "ADV_SWAP": [
+        1477,
+        547
+    ],
+    "ADV_CLOSE": [
+        1478,
+        578
+    ],
+    "ADV_DESKTOP": [
+        1481,
+        606
+    ],
+    "ADV_LOCK": [
+        1485,
+        641
+    ],
+    "ADV_RUN": [
+        1487,
+        675
+    ],
+    "PROFILE_RENAME": [
+        236,
+        355
+    ]
+}

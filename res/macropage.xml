@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Window>
+	<HorizontalLayout>
+		<VerticalLayout width="320"  padding="30,10,0,10" >
+			<Label text="macro_name_text" height="34" resourcetext="true" align="left" valign="vcenter" textcolor="0xFF000000" padding="10,0,0,0"/>
+			<Combo name="macro_combo" height="34" style="combo_style" padding="10,5,10,0" dropbox="bordercolor=&quot;0xFF26bbee&quot; bordersize=&quot;1&quot; bkcolor=&quot;#FF000000&quot;"/>
+			<HorizontalLayout height="34" padding="10,10,10,0">
+				<Button name="btn_add_macro_floder" width="94" normalimage="skins/add_1.png" hotimage="skins/add_2.png" pushedimage="skins/add_3.png" disabledimage="skins/add_4.png"/>
+				<Control/>
+				<Button name="btn_delete_macro_floder" width="94" normalimage="skins/delete_1.png" hotimage="skins/delete_2.png" pushedimage="skins/delete_3.png" disabledimage="skins/delete_4.png"/>
+				<Control/>
+				<Button name="btn_menu_macro_floder" width="94" normalimage="skins/menu_1.png" hotimage="skins/menu_2.png" pushedimage="skins/menu_3.png" disabledimage="skins/menu_4.png"/>
+			</HorizontalLayout>
+			<Label text="rename_macro_text" height="34" resourcetext="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" padding="10,10,0,0" visible="false"/>
+			<Edit name="edit_macro_name" visible="false" height="34" maxchar="30" bkcolor="0xFF000000" normalimage="skins/edit_1.png" hotimage="skins/edit_2.png" focusedimage="skins/edit_2.png" textcolor="0xFFFFFFFF" align="left" valign="vcenter" padding="10,5,10,0" nativebkcolor="0xFF000000"/>
+			
+			<List name="macro_list" height="310" vscrollbar="true" style="list_style" endellipsis="true" itemtextcolor="#FF000000" itemvalign="vcenter"  bordersize="1" bordercolor="#FF5F5F5F" padding="10,10,10,0" header="hidden" itemalign="left" itemtextpadding="10,0,10,0" itemtextpadding="10,0,50,0">
+			</List>
+			<HorizontalLayout height="34" padding="10,10,10,0">
+				<Button name="btn_add_macro" width="94" normalimage="skins/add_1.png" hotimage="skins/add_2.png" pushedimage="skins/add_3.png" disabledimage="skins/add_4.png"/>
+				<Control/>
+				<Button name="btn_delete_macro" width="94" normalimage="skins/delete_1.png" hotimage="skins/delete_2.png" pushedimage="skins/delete_3.png" disabledimage="skins/delete_4.png"/>
+				<Control/>
+				<Button name="btn_menu_macro" width="94" normalimage="skins/menu_1.png" hotimage="skins/menu_2.png" pushedimage="skins/menu_3.png" disabledimage="skins/menu_4.png"/>
+			</HorizontalLayout>
+			<Option name="macro_delay_option_1" text="min_delay_text" height="24" style="radio_style" group="macro_delay" padding="20,10,20,0"/>
+			<Container height="24" padding="20,10,20,0">
+				<Option name="macro_delay_option_2" text="default_delay_text" height="24" style="radio_style" group="macro_delay" textpadding="70,0,0,0" selected="true"/>
+				<Edit name="edit_default_delay" text="10" float="true" pos="15,0,65,24" numberonly="true" maxchar="5" bkcolor="0xFF26bbee" normalimage="res='skins/edit_1.png' corner='2,2,2,2'" hotimage="res='skins/edit_2.png' corner='2,2,2,2'" focusedimage="res='skins/edit_2.png' corner='2,2,2,2'" textcolor="0xFF000000" align="center" valign="vcenter" padding="10,5,10,0" nativebkcolor="0xFFffffff" font="4"/>
+			</Container>
+			<Option name="macro_delay_option_3" text="record_delay_text" height="24" style="radio_style" group="macro_delay" padding="20,10,20,0"/>
+						
+			<CheckBox name="btn_record" text="start_recording_text" height="46" resourcetext="true" EnableAutoCheck="true" textcolor="0xFF000000" hottextcolor="0xFF26bbee" pushedtextcolor="0xFF26bbee" selectedtextcolor="0xFFFF0000" normalimage="skins/start_recording_1.png" hotimage="skins/start_recording_1.png" pushedimage="skins/start_recording_2.png" selectedimage="skins/start_recording_2.png" padding="10,10,10,0"/>
+		</VerticalLayout>
+		
+		<VerticalLayout bordercolor="0xFF5F5F5F" bordersize="1" padding="30,10,50,10">
+			<List name="macro_action_list" height="480" vscrollbar="true" style="list_style" endellipsis="true"
+                                  itemtextcolor="#FFFFFFFF" itemvalign="vcenter" bordersize="1" bordercolor="#FF5F5F5F" >
+                <ListHeader width="885" height="35" bordercolor="#FF5F5F5F" bordersize="1" >
+					<ListHeaderItem text="macro_key_text" textcolor="#FF000000" bkcolor="#FF26bbee"
+                            bordercolor="#FF5F5F5F" bordersize="1" sepwidth="1" resourcetext="true" dragable="false"/>
+                    <ListHeaderItem text="macro_action_text" textcolor="#FF000000" bkcolor="#FF26bbee"
+                            bordercolor="#FF5F5F5F" bordersize="1" sepwidth="1" resourcetext="true" dragable="false"/>
+                    <ListHeaderItem text="macro_delay_text" textcolor="#FF000000" bkcolor="#FF26bbee"
+                            bordercolor="#FF5F5F5F" bordersize="1" sepwidth="1" resourcetext="true" dragable="false"/>
+                </ListHeader>
+            </List>
+			
+			<HorizontalLayout height="30" padding="10,10,10,0">
+				<Label text="loop_time_text" resourcetext="true" width="150" align="left" valign="vcenter" textcolor="0xFf000000"/>
+				<Edit name="edit_loop_time" text="1" width="150" font="3" bkcolor="0xFF26bbee" numberonly="true" maxchar="3" normalimage="res='skins/edit_1.png' corner='2,2,2,2'" hotimage="res='skins/edit_2.png' corner='2,2,2,2'" focusedimage="res='skins/edit_2.png' corner='2,2,2,2'" textcolor="0xFF000000" align="center" valign="vcenter" nativebkcolor="0xFFffffff"/>
+				<Control/>
+				<Button name="btn_macro_move_up" width="30" normalimage="skins/up_1.png" hotimage="skins/up_2.png" pushedimage="skins/up_3.png"/>
+				<Button name="btn_macro_move_down" width="30" normalimage="skins/down_1.png" hotimage="skins/down_2.png" pushedimage="skins/down_3.png" padding="10,0,0,0"/>
+				<Button name="btn_macro_action_delete" width="30" normalimage="skins/delete_macro_1.png" hotimage="skins/delete_macro_2.png" pushedimage="skins/delete_macro_3.png" padding="10,0,0,0"/>
+				<Button name="btn_macro_clear_all" width="30" normalimage="skins/clear_all_1.png" hotimage="skins/clear_all_2.png" pushedimage="skins/clear_all_3.png" padding="10,0,0,0"/>
+				<Button name="btn_insert_move" width="30" normalimage="skins/move_1.png" hotimage="skins/move_2.png" pushedimage="skins/move_3.png" padding="10,0,0,0"/>
+				<Label text="X:" autocalcwidth="true" textcolor="0xFf000000"/>
+				<Edit name="edit_insert_x" text="0" width="60" font="3" bkcolor="0xFF26bbee" maxchar="4" normalimage="res='skins/edit_1.png' corner='2,2,2,2'" hotimage="res='skins/edit_2.png' corner='2,2,2,2'" focusedimage="res='skins/edit_2.png' corner='2,2,2,2'" textcolor="0xFF000000" align="center" valign="vcenter" nativebkcolor="0xFFffffff" padding="3,0,0,0"/>
+				<Label text="Y:" autocalcwidth="true" textcolor="0xFf000000" padding="3,0,0,0"/>
+				<Edit name="edit_insert_y" text="0" width="60" font="3" bkcolor="0xFF26bbee" maxchar="4" normalimage="res='skins/edit_1.png' corner='2,2,2,2'" hotimage="res='skins/edit_2.png' corner='2,2,2,2'" focusedimage="res='skins/edit_2.png' corner='2,2,2,2'" textcolor="0xFF000000" align="center" valign="vcenter" nativebkcolor="0xFFffffff" padding="3,0,0,0"/>					
+				<Control width="10"/>
+			</HorizontalLayout>
+			
+			<HorizontalLayout name="macro_key_hor" height="30" padding="10,10,0,0" visible="false">
+				<Label text="macro_key_text" resourcetext="true" width="150" align="left" valign="vcenter" textcolor="0xFf000000"/>
+				<Edit name="edit_macro_action" width="150" font="3" bkcolor="0xFF26bbee" readonly="true" maxchar="50" normalimage="res='skins/edit_1.png' corner='2,2,2,2'" hotimage="res='skins/edit_2.png' corner='2,2,2,2'" focusedimage="res='skins/edit_2.png' corner='2,2,2,2'" textcolor="0xFF000000" align="center" valign="vcenter" nativebkcolor="0xFFffffff"/>
+				<Combo name="macro_mouse_action_combo" width="150" style="combo_style" normalimage="skins/combo_1_1.png" hotimage="skins/combo_1_2.png" pushedimage="skins/combo_1_2.png" dropbox="bordercolor=&quot;0xFF26bbee&quot; bordersize=&quot;1&quot; bkcolor=&quot;#FF000000&quot;">
+					<ListLabelElement height="25" resourcetext="true" text="L_Button" selected="true"/>
+					<ListLabelElement height="25" resourcetext="true" text="R_Button"/>
+					<ListLabelElement height="25" resourcetext="true" text="M_Button"/>
+					<ListLabelElement height="25" resourcetext="true" text="Backward_Button"/>
+					<ListLabelElement height="25" resourcetext="true" text="Forward_Button"/>
+				</Combo>
+			</HorizontalLayout>
+			
+			<HorizontalLayout name="macro_mouse_move_hor" height="30" padding="20,10,0,0" visible="false">
+				<Label text="mouse_move_text" resourcetext="true" width="150" align="left" valign="vcenter" textcolor="0xFf000000"/>
+				<Label text="X:" autocalcwidth="true" textcolor="0xFf000000"/>
+				<Edit name="edit_macro_action_x" width="60" font="3" bkcolor="0xFF26bbee" maxchar="4" normalimage="res='skins/edit_1.png' corner='2,2,2,2'" hotimage="res='skins/edit_2.png' corner='2,2,2,2'" focusedimage="res='skins/edit_2.png' corner='2,2,2,2'" textcolor="0xFF000000" align="center" valign="vcenter" nativebkcolor="0xFFffffff" padding="3,0,0,0"/>
+				<Label text="Y:" autocalcwidth="true" textcolor="0xFf000000" padding="3,0,0,0"/>
+				<Edit name="edit_macro_action_y" width="60" font="3" bkcolor="0xFF26bbee" maxchar="4" normalimage="res='skins/edit_1.png' corner='2,2,2,2'" hotimage="res='skins/edit_2.png' corner='2,2,2,2'" focusedimage="res='skins/edit_2.png' corner='2,2,2,2'" textcolor="0xFF000000" align="center" valign="vcenter" nativebkcolor="0xFFffffff" padding="3,0,0,0"/>					
+			</HorizontalLayout>
+			
+			<HorizontalLayout name="macro_delay_hor" height="30" padding="10,10,0,0" visible="false">
+				<Label text="macro_delay_text" resourcetext="true" width="150" align="left" valign="vcenter" textcolor="0xFf000000"/>
+				<Edit name="edit_macro_delay" width="150" font="3" bkcolor="0xFF26bbee" numberonly="true" maxchar="5" normalimage="res='skins/edit_1.png' corner='2,2,2,2'" hotimage="res='skins/edit_2.png' corner='2,2,2,2'" focusedimage="res='skins/edit_2.png' corner='2,2,2,2'" textcolor="0xFF000000" align="center" valign="vcenter" nativebkcolor="0xFFffffff"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+	</HorizontalLayout>
+</Window>

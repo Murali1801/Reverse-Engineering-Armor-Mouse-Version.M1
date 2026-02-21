@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Window>
+	<VerticalLayout name="light_tab">
+		<HorizontalLayout padding="0,10,0,0">
+			<VerticalLayout padding="30,0,0,10" bkcolor="0x5F000000" bordersize="1" bordercolor="0xFF5F5F5F" width="400">
+				<Label text="light_effect_text" resourcetext="true" height="40" align="left" valign="vcenter" bkcolor="0xFF5F5F5F" textcolor="0xFFFFFFFF" textpadding="20,0,0,0"/>
+				<HorizontalLayout height="155">
+					<VerticalLayout width="200">
+						<Option name="light_mode_option_1" text="light_mode_1_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+						<Option name="light_mode_option_2" text="light_mode_2_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+						<Option name="light_mode_option_3" text="light_mode_3_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+						<Option name="light_mode_option_4" text="light_mode_4_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+						<Option name="light_mode_option_5" text="light_mode_5_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+						<Option name="light_mode_option_6" text="light_mode_6_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+					</VerticalLayout>
+					
+					<VerticalLayout width="200">
+						<Option name="light_mode_option_7" text="light_mode_7_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+						<Option name="light_mode_option_8" text="light_mode_8_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+						<Option name="light_mode_option_9" text="light_mode_9_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+						<Option name="light_mode_option_10" text="light_mode_10_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+						<Option name="light_mode_option_11" text="light_mode_11_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+						<Option name="light_mode_option_12" text="light_mode_12_text" height="24" style="radio_style" group="light_mode" padding="20,2,20,0"/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				
+				<Control height="5"/>
+				
+				<Label text="parameter_setting_text" resourcetext="true" height="40" align="left" valign="vcenter" bkcolor="0xFF5F5F5F" textcolor="0xFFFFFFFF" textpadding="20,0,0,0"/>
+				<VerticalLayout name="brightness_ver" height="70" padding="0,5,0,0">
+					<Label text="brightness_text" resourcetext="true" height="20" align="left" valign="vcenter" textcolor="0xFFFFFFFF" textpadding="20,0,0,0"/>
+					<Slider name="brightness_slider" enabled="true" sendmove="true" padding="20,3,20,0" height="22" value="255" min="0" max="255" bkimage="res='skins/slider_BG.png' corner='2,2,2,2' dest='0,16,360,22'" 
+						thumbimage="skins/SliderBar_Thumb.png" thumbhotimage="skins/SliderBar_Thumb.png" thumbpushedimage="skins/SliderBar_Thumb.png" thumbsize="14,16"/>
+					<HorizontalLayout height="20" padding="20,5,20,0">
+						<Label text="low_brightness_text" resourcetext="true" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" font="3"/>
+						<Control/>
+						<Label text="high_brightness_text" resourcetext="true" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" font="3"/> 
+					</HorizontalLayout>
+				</VerticalLayout>
+				
+				<VerticalLayout name="breathing_ver" height="70" padding="0,5,0,0">
+					<Label text="frequency_text" resourcetext="true" height="20" align="left" valign="vcenter" textcolor="0xFFFFFFFF" textpadding="20,0,0,0"/>
+					<Slider name="frequency_slider" enabled="true" sendmove="true" padding="20,3,20,0" height="22" value="3" min="0" max="4" bkimage="res='skins/slider_BG.png' corner='2,2,2,2' dest='0,16,360,22'" 
+						thumbimage="skins/SliderBar_Thumb.png" thumbhotimage="skins/SliderBar_Thumb.png" thumbpushedimage="skins/SliderBar_Thumb.png" thumbsize="14,16"/>
+					<HorizontalLayout height="20" padding="20,5,20,0">
+						<Label text="slow_frequency_text" resourcetext="true" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" font="3"/>
+						<Control/>
+						<Label text="fast_frequency_text" resourcetext="true" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" font="3"/> 
+					</HorizontalLayout>
+				</VerticalLayout>
+				
+				<VerticalLayout name="length_ver" height="70" padding="0,5,0,0">
+					<Label text="length_text" resourcetext="true" height="20" align="left" valign="vcenter" textcolor="0xFFFFFFFF" textpadding="20,0,0,0"/>
+					<Slider name="length_slider" enabled="true" sendmove="true" padding="20,3,20,0" height="22" value="3" min="0" max="4" bkimage="res='skins/slider_BG.png' corner='2,2,2,2' dest='0,16,360,22'" 
+						thumbimage="skins/SliderBar_Thumb.png" thumbhotimage="skins/SliderBar_Thumb.png" thumbpushedimage="skins/SliderBar_Thumb.png" thumbsize="14,16"/>
+					<HorizontalLayout height="20" padding="20,5,20,0">
+						<Label text="length_short_text" resourcetext="true" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" font="3"/>
+						<Control/>
+						<Label text="length_long_text" resourcetext="true" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" font="3"/> 
+					</HorizontalLayout>
+				</VerticalLayout>
+				
+				<VerticalLayout name="color_setting" visible="false">
+					<Label text="light_color_setting_text" resourcetext="true" height="40" align="left" valign="vcenter" bkcolor="0xFF5F5F5F" textcolor="0xFFFFFFFF" textpadding="20,0,0,0" padding="0,10,0,0"/>
+					<HorizontalLayout height="30" padding="20,10,0,0">
+						<Label text="current_color_text" resourcetext="true" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" font="3"/>
+						<Control name="current_color_control"  width="30" bkcolor="0xFFFF0000"/>
+						<Control/>
+						<Label text="R:" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" font="3"/>
+						<Edit name="r_edit" width="40" padding="5,5,5,5" font="3" numberonly="true" maxchar="3" align="center" valign="vcenter"/>
+						<Label text="G:" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" font="3"/>
+						<Edit name="g_edit" width="40" padding="5,5,5,5" font="3" numberonly="true" maxchar="3" align="center" valign="vcenter"/>
+						<Label text="B:" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" font="3"/>
+						<Edit name="b_edit" width="40" padding="5,5,0,5" font="3" numberonly="true" maxchar="3" align="center" valign="vcenter"/>
+						<Control width="20"/>
+					</HorizontalLayout>
+					<ColorPalette name="select_color_Pallet" width="360" height="160" palletheight="140" barheight="20" thumbimage="skins/cursor.png" padding="20,10,20,0" sendmove="true"/>		 
+				</VerticalLayout>
+				
+				<VerticalLayout name="color_ver">
+					<Label text="light_color_setting_text" resourcetext="true" height="40" align="left" valign="vcenter" bkcolor="0xFF5F5F5F" textcolor="0xFFFFFFFF" textpadding="20,0,0,0" padding="0,10,0,0"/>
+					
+					<Option name="option_color_mode_1" text="fix_color_text" height="24" style="radio_style" width="100" group="color_mode_group" padding="20,20,20,0"/>
+					<Button name="btn_fix_color" height="30" width="30" bkcolor="0xFFFF0000" normalimage="skins/colorbox_1.png" hotimage="skins/colorbox_2.png" pushedimage="skins/colorbox_2.png" padding="40,10,0,0"/>
+					
+					<Option name="option_color_mode_2" text="cycle_color_text" height="24" style="radio_style" width="100" group="color_mode_group" padding="20,20,20,0" selected="true"/>
+					<HorizontalLayout height="30" padding="0,10,0,0">
+						<Button name="btn_cycle_color_1" width="30" bkcolor="0xFFFF0000" normalimage="skins/colorbox_1.png" hotimage="skins/colorbox_2.png" pushedimage="skins/colorbox_2.png" padding="40,0,0,0"/>
+						<Button name="btn_cycle_color_2" width="30" bkcolor="0xFF00FF00" normalimage="skins/colorbox_1.png" hotimage="skins/colorbox_2.png" pushedimage="skins/colorbox_2.png" padding="10,0,0,0"/>
+						<Button name="btn_cycle_color_3" width="30" bkcolor="0xFF0000FF" normalimage="skins/colorbox_1.png" hotimage="skins/colorbox_2.png" pushedimage="skins/colorbox_2.png" padding="10,0,0,0"/>
+						<Button name="btn_cycle_color_4" width="30" bkcolor="0xFFFFFF00" normalimage="skins/colorbox_1.png" hotimage="skins/colorbox_2.png" pushedimage="skins/colorbox_2.png" padding="10,0,0,0"/>
+						<Button name="btn_cycle_color_5" width="30" bkcolor="0xFFFF00FF" normalimage="skins/colorbox_1.png" hotimage="skins/colorbox_2.png" pushedimage="skins/colorbox_2.png" padding="10,0,0,0"/>
+						<Button name="btn_cycle_color_6" width="30" bkcolor="0xFF00FFFF" normalimage="skins/colorbox_1.png" hotimage="skins/colorbox_2.png" pushedimage="skins/colorbox_2.png" padding="10,0,0,0"/>
+						<Button name="btn_cycle_color_7" width="30" bkcolor="0xFFFF7F00" normalimage="skins/colorbox_1.png" hotimage="skins/colorbox_2.png" pushedimage="skins/colorbox_2.png" padding="10,0,0,0"/>
+						<Button name="btn_cycle_color_8" width="30" bkcolor="0xFFFFFFFF" normalimage="skins/colorbox_1.png" hotimage="skins/colorbox_2.png" pushedimage="skins/colorbox_2.png" padding="10,0,0,0"/>
+					</HorizontalLayout>
+				</VerticalLayout>
+			</VerticalLayout>
+			
+			<VerticalLayout width="380" bkimage="res='skins/mouse/mouse.png' dest='42,50,338,578'" padding="37,0,0,0">
+			</VerticalLayout>
+		</HorizontalLayout>
+	</VerticalLayout>	
+</Window>

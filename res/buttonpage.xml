@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Window>
+	<VerticalLayout name="button_tab">
+		<HorizontalLayout>
+			<Control/>
+			<HorizontalLayout width="850">
+				<Control width="5"/>
+				<VerticalLayout width="55" name="office_mode_left">			
+				</VerticalLayout>
+				
+				<VerticalLayout width="55" name="game_mode_left" visible="false">
+				</VerticalLayout>
+				
+				<VerticalLayout name="ver_mouse_pic" width="380" >
+					<Control/>
+					<HorizontalLayout height="24" visible="false"  >
+						<Control/>
+						<Option name="button_mode_option_1" text="button_mode_1_text" width="120" style="radio_style" group="button_mode" selected="true"/>
+						<Option name="button_mode_option_2" text="button_mode_2_text" width="120" style="radio_style" group="button_mode"/>
+						<Control/>
+					</HorizontalLayout>
+					<Control height="50"/>
+					<Control name="control_button_pic_0" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse.png" visible="true"/>
+					<Control name="control_button_pic_1" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_1.png" visible="false"/>
+					<Control name="control_button_pic_2" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_2.png" visible="false"/>
+					<Control name="control_button_pic_3" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_3.png" visible="false"/>
+					<Control name="control_button_pic_4" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_4.png" visible="false"/>
+					<Control name="control_button_pic_5" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_5.png" visible="false"/>
+					<Control name="control_button_pic_6" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_6.png" visible="false"/>
+					<Control name="control_button_pic_7" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_7.png" visible="false"/>
+					<Control name="control_button_pic_8" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_8.png" visible="false"/>
+					<Control name="control_button_pic_9" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_9.png" visible="false"/>
+					<Control name="control_button_pic_10" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_10.png" visible="false"/>
+					<Control name="control_button_pic_11" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_11.png" visible="false"/>
+					<Control name="control_button_pic_12" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_12.png" visible="false"/>
+					<Control name="control_button_pic_13" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_13.png" visible="false"/>
+					<Control name="control_button_pic_14" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_14.png" visible="false"/>
+					<Control name="control_button_pic_15" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_15.png" visible="false"/>
+					<Control name="control_button_pic_16" float="true" pos="42,50,338,578" bkimage="skins/mouse/mouse_16.png" visible="false"/>
+				</VerticalLayout>
+				<Control width="80"/>
+				<VerticalLayout width="225" name="office_mode_right">	
+					<Button name="button1_btn" text="mouse_key_1" height="41" style="mouse_key_style" padding="0,55,0,0"/>
+					<Button name="button2_btn" text="mouse_key_2" height="41" style="mouse_key_style" padding="0,55,0,0"/>
+					<Button name="button3_btn" text="mouse_key_3" height="41" style="mouse_key_style" padding="0,55,0,0"/>
+					<Button name="button4_btn" text="mouse_key_4" height="41" style="mouse_key_style" padding="0,55,0,0"/>
+					<Button name="button5_btn" text="mouse_key_5" height="41" style="mouse_key_style" padding="0,55,0,0"/>	
+					<Button name="button6_btn" text="mouse_key_6" height="41" style="mouse_key_style" padding="0,55,0,0"  visible="false"/>
+					<Button name="button7_btn" text="mouse_key_7" height="41" style="mouse_key_style" padding="0,0,0,0" visible="false"/>
+					<Button name="button8_btn" text="mouse_key_8" height="41" style="mouse_key_style" padding="0,0,0,0" visible="false"/>	
+					<Button name="button9_btn" text="mouse_key_9" height="41" style="mouse_key_style" padding="0,75,0,0" visible="false"/>
+					<Button name="button10_btn" text="mouse_key_10" height="41" style="mouse_key_style" padding="0,35,0,0" visible="false"/>
+					<Button name="button11_btn" text="mouse_key_11" height="41" style="mouse_key_style" padding="0,35,0,0" visible="false"/>
+					<Button name="button12_btn" text="mouse_key_12" height="41" style="mouse_key_style" padding="0,35,0,0" visible="false"/>
+					<Button name="button13_btn" text="mouse_key_13" height="41" style="mouse_key_style" padding="0,35,0,0" visible="false"/>
+					<Button name="button14_btn" text="mouse_key_14" height="41" style="mouse_key_style" padding="0,35,0,0" visible="false"/>
+					<Button name="button15_btn" text="mouse_key_15" height="41" style="mouse_key_style" padding="0,115,0,0" visible="false"/>
+					<Button name="button16_btn" text="mouse_key_16" height="41" style="mouse_key_style" padding="0,115,0,0" visible="false"/>
+				</VerticalLayout>
+				
+				<VerticalLayout width="225" name="game_mode_right" visible="false">
+
+					<Button name="button17_btn" text="mouse_key_1" height="41" style="mouse_key_style" padding="0,55,0,0"/>
+					<Button name="button18_btn" text="mouse_key_2" height="41" style="mouse_key_style" padding="0,55,0,0"/>
+					<Button name="button19_btn" text="mouse_key_3" height="41" style="mouse_key_style" padding="0,55,0,0"/>
+					<Button name="button20_btn" text="mouse_key_4" height="41" style="mouse_key_style" padding="0,55,0,0"/>
+					<Button name="button21_btn" text="mouse_key_5" height="41" style="mouse_key_style" padding="0,55,0,0"/>	
+					<Button name="button22_btn" text="mouse_key_6" height="41" style="mouse_key_style" padding="0,55,0,0"/>	
+					<Button name="button23_btn" text="mouse_key_7" height="41" style="mouse_key_style" padding="0,0,0,0"visible="false"/>
+					<Button name="button24_btn" text="mouse_key_8" height="41" style="mouse_key_style" padding="0,0,0,0"visible="false"/>	
+					<Button name="button25_btn" text="mouse_key_9" height="41" style="mouse_key_style" padding="0,75,0,0" visible="false"/>
+					<Button name="button26_btn" text="mouse_key_10" height="41" style="mouse_key_style" padding="0,35,0,0" visible="false"/>
+					<Button name="button27_btn" text="mouse_key_11" height="41" style="mouse_key_style" padding="0,35,0,0" visible="false"/>
+					<Button name="button28_btn" text="mouse_key_12" height="41" style="mouse_key_style" padding="0,35,0,0" visible="false"/>
+					<Button name="button29_btn" text="mouse_key_13" height="41" style="mouse_key_style" padding="0,35,0,0" visible="false"/>
+					<Button name="button30_btn" text="mouse_key_14" height="41" style="mouse_key_style" padding="0,35,0,0" visible="false"/>
+					<Button name="button31_btn" text="mouse_key_15" height="41" style="mouse_key_style" padding="0,115,0,0" visible="false"/>
+					<Button name="button32_btn" text="mouse_key_16" height="41" style="mouse_key_style" padding="0,115,0,0" visible="false"/>
+				</VerticalLayout>
+			</HorizontalLayout>
+			<Control />
+		</HorizontalLayout>
+	</VerticalLayout>
+</Window>

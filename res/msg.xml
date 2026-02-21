@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="448,288" caption="0,0,0,75" bktrans="true">
+	<VerticalLayout name="root" bkcolor="0xCF000000" bordersize="1" bordercolor="0xFF26bbee">
+		<Control height="10"/>
+		<HorizontalLayout height="22">
+			<Control/>
+			<Button name="exit_btn" width="22" normalimage="skins/close_1.png" hotimage="skins/close_2.png" pushedimage="skins/close_2.png"/>
+			<Control width="10"/>
+		</HorizontalLayout>
+		
+		<Label name="label_title" resourcetext="true" height="30" align="left" valign="vcenter" textcolor="0xFFFF0000" padding="30,0,0,0"/>
+		<Control/>
+		
+		<Label name="label_string" resourcetext="true" height="100" align="center" valign="vcenter" wordbreak="true" textcolor="0xFFFFFFFF" padding="50,0,50,0"/>
+			
+		<Control/>
+		<HorizontalLayout height="25">
+			<Control/>
+			<Button name="ok_btn" text="ok_text" style="center_button" width="100"
+				bordersize="1" bordercolor="0xFF26bbee" hotbkcolor="0x7F26bbee" pushedbkcolor="0xFF26bbee"/>
+				
+			<Button name="cancel_btn" text="cancel_text" style="center_button" width="100" padding="20,0,0,0"
+				bordersize="1" bordercolor="0xFF26bbee" hotbkcolor="0x7F26bbee" pushedbkcolor="0xFF26bbee"/>	
+			<Control/>
+		</HorizontalLayout>	
+		<Control height="20"/>
+   </VerticalLayout>
+</Window>

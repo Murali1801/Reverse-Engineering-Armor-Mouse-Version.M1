@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Window>
+	<HorizontalLayout>
+		<VerticalLayout width="320" bordersize="1" bordercolor="0xFF5F5F5F" padding="10,10,0,10" bkcolor="0x5F000000">
+			<Label text="gun_name_text" height="34" resourcetext="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" padding="10,0,0,0"/>
+			<Combo name="gun_combo" height="34" style="combo_style" padding="10,5,10,0" dropbox="bordercolor=&quot;0xFF26bbee&quot; bordersize=&quot;1&quot; bkcolor=&quot;#FF000000&quot;"/>
+			<HorizontalLayout height="34" padding="10,10,10,0">
+				<Button name="btn_add_gun_floder" width="94" normalimage="skins/add_1.png" hotimage="skins/add_2.png" pushedimage="skins/add_3.png" disabledimage="skins/add_4.png"/>
+				<Control/>
+				<Button name="btn_delete_gun_floder" width="94" normalimage="skins/delete_1.png" hotimage="skins/delete_2.png" pushedimage="skins/delete_3.png" disabledimage="skins/delete_4.png"/>
+				<Control/>
+				<Button name="btn_menu_gun_floder" width="94" normalimage="skins/menu_1.png" hotimage="skins/menu_2.png" pushedimage="skins/menu_3.png" disabledimage="skins/menu_4.png"/>
+			</HorizontalLayout>
+			<Label text="rename_gun_text" height="34" resourcetext="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF" padding="10,10,0,0" visible="false"/>
+			<Edit name="edit_gun_name" visible="false" height="34" maxchar="30" bkcolor="0xFF000000" normalimage="skins/edit_1.png" hotimage="skins/edit_2.png" focusedimage="skins/edit_2.png" textcolor="0xFFFFFFFF" align="left" valign="vcenter" padding="10,5,10,0" nativebkcolor="0xFF000000"/>
+			
+			<List name="gun_list" height="380" vscrollbar="true" style="list_style" endellipsis="true" itemtextcolor="#FFFFFFFF" itemvalign="vcenter" bkcolor="0x7F000000" bordersize="1" bordercolor="#FF5F5F5F" padding="10,10,10,0" header="hidden" itemalign="left" itemtextpadding="10,0,10,0" itemtextpadding="10,0,50,0">
+			</List>
+			<HorizontalLayout height="34" padding="10,10,10,0">
+				<Button name="btn_add_gun" width="94" normalimage="skins/add_1.png" hotimage="skins/add_2.png" pushedimage="skins/add_3.png" disabledimage="skins/add_4.png"/>
+				<Control/>
+				<Button name="btn_delete_gun" width="94" normalimage="skins/delete_1.png" hotimage="skins/delete_2.png" pushedimage="skins/delete_3.png" disabledimage="skins/delete_4.png"/>
+				<Control/>
+				<Button name="btn_menu_gun" width="94" normalimage="skins/menu_1.png" hotimage="skins/menu_2.png" pushedimage="skins/menu_3.png" disabledimage="skins/menu_4.png"/>
+			</HorizontalLayout>
+		</VerticalLayout>
+		
+		<VerticalLayout bordercolor="0xFF5F5F5F" bkcolor="0xAF000000" bordersize="1" padding="15,10,10,10">
+			<HorizontalLayout height="30" padding="10,100,0,0">
+				<Label text="zidan_num_text" autocalcwidth="true" resourcetext="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF"/>
+				<Combo name="zidan_combo" width="150" style="combo_style" normalimage="skins/combo_1_1.png" hotimage="skins/combo_1_2.png" pushedimage="skins/combo_1_2.png" dropbox="bordercolor=&quot;0xFF26bbee&quot; bordersize=&quot;1&quot; bkcolor=&quot;#FF000000&quot;">
+					<ListLabelElement height="25" text="1"/>
+					<ListLabelElement height="25" text="2"/>
+					<ListLabelElement height="25" text="3"/>
+					<ListLabelElement height="25" text="4"/>
+					<ListLabelElement height="25" text="5"/>
+					<ListLabelElement height="25" text="6"/>
+					<ListLabelElement height="25" text="7"/>
+					<ListLabelElement height="25" text="8"/>
+					<ListLabelElement height="25" text="9"/>
+					<ListLabelElement height="25" text="10"/>
+					<ListLabelElement height="25" text="11"/>
+					<ListLabelElement height="25" text="12"/>
+					<ListLabelElement height="25" text="13"/>
+					<ListLabelElement height="25" text="14"/>
+					<ListLabelElement height="25" text="15"/>
+					<ListLabelElement height="25" text="16"/>
+					<ListLabelElement height="25" text="17"/>
+					<ListLabelElement height="25" text="18"/>
+					<ListLabelElement height="25" text="19"/>
+					<ListLabelElement height="25" text="20"/>
+					<ListLabelElement height="25" text="21"/>
+					<ListLabelElement height="25" text="22"/>
+					<ListLabelElement height="25" text="23"/>
+					<ListLabelElement height="25" text="24"/>
+					<ListLabelElement height="25" text="25"/>
+					<ListLabelElement height="25" text="26"/>
+					<ListLabelElement height="25" text="27"/>
+					<ListLabelElement height="25" text="28"/>
+					<ListLabelElement height="25" text="29"/>
+					<ListLabelElement height="25" text="30" selected="true"/>
+				</Combo>
+			</HorizontalLayout>
+			
+			<HorizontalLayout height="250" padding="10,20,45,0">
+				<VerticalLayout width="100">
+					<Label text="num_text" height="30" resourcetext="true" textcolor="0xFFFFFFFF" align="left" valign="vcenter"/>
+					<Label text="gun_delay_text" height="30" resourcetext="true" textcolor="0xFFFFFFFF" align="left" valign="vcenter"/>
+					<Control height="80"/>
+					<HorizontalLayout height="30">
+						<Label text="X=" textcolor="0xFFFFFFFF" align="right" valign="vcenter"/>
+					</HorizontalLayout>
+					<HorizontalLayout height="30">
+						<Label text="Y=" textcolor="0xFFFFFFFF" align="right" valign="vcenter"/>
+					</HorizontalLayout>
+				</VerticalLayout>
+				<HorizontalLayout hscrollbar="true" padding="20,0,0,0">
+					<VerticalLayout name="ver_zidan_num_1" width="75">
+						<Label text="1" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_1" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_1" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_1" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_1" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_1" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_1" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_1" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_1" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_1" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_2" width="75">
+						<Label text="2" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_2" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_2" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_2" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_2" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_2" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_2" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_2" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_2" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_2" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_3" width="75">
+						<Label text="3" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_3" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_3" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_3" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_3" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_3" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_3" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_3" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_3" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_3" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_4" width="75">
+						<Label text="4" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_4" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_4" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_4" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_4" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_4" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_4" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_4" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_4" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_4" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_5" width="75">
+						<Label text="5" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_5" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_5" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_5" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_5" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_5" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_5" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_5" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_5" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_5" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_6" width="75">
+						<Label text="6" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_6" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_6" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_6" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_6" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_6" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_6" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_6" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_6" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_6" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_7" width="75">
+						<Label text="7" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_7" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_7" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_7" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_7" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_7" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_7" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_7" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_7" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_7" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_8" width="75">
+						<Label text="8" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_8" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_8" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_8" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_8" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_8" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_8" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_8" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_8" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_8" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_9" width="75">
+						<Label text="9" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_9" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_9" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_9" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_9" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_9" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_9" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_9" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_9" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_9" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_10" width="75">
+						<Label text="10" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_10" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_10" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_10" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_10" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_10" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_10" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_10" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_10" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_10" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_11" width="75">
+						<Label text="11" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_11" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_11" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_11" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_11" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_11" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_11" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_11" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_11" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_11" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_12" width="75">
+						<Label text="12" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_12" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_12" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_12" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_12" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_12" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_12" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_12" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_12" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_12" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_13" width="75">
+						<Label text="13" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_13" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_13" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_13" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_13" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_13" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_13" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_13" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_13" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_13" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_14" width="75">
+						<Label text="14" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_14" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_14" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_14" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_14" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_14" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_14" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_14" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_14" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_14" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_15" width="75">
+						<Label text="15" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_15" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_15" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_15" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_15" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_15" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_15" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_15" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_15" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_15" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_16" width="75">
+						<Label text="16" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_16" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_16" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_16" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_16" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_16" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_16" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_16" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_16" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_16" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_17" width="75">
+						<Label text="17" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_17" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_17" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_17" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_17" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_17" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_17" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_17" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_17" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_17" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_18" width="75">
+						<Label text="18" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_18" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_18" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_18" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_18" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_18" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_18" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_18" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_18" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_18" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_19" width="75">
+						<Label text="19" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_19" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_19" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_19" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_19" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_19" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_19" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_19" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_19" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_19" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_20" width="75">
+						<Label text="20" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_20" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_20" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_20" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_20" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_20" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_20" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_20" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_20" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_20" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_21" width="75">
+						<Label text="21" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_21" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_21" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_21" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_21" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_21" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_21" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_21" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_21" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_21" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_22" width="75">
+						<Label text="22" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_22" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_22" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_22" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_22" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_22" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_22" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_22" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_22" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_22" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_23" width="75">
+						<Label text="23" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_23" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_23" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_23" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_23" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_23" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_23" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_23" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_23" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_23" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_24" width="75">
+						<Label text="24" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_24" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_24" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_24" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_24" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_24" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_24" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_24" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_24" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_24" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_25" width="75">
+						<Label text="25" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_25" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_25" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_25" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_25" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_25" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_25" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_25" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_25" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_25" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_26" width="75">
+						<Label text="26" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_26" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_26" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_26" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_26" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_26" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_26" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_26" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_26" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_26" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_27" width="75">
+						<Label text="27" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_27" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_27" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_27" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_27" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_27" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_27" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_27" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_27" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_27" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_28" width="75">
+						<Label text="28" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_28" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_28" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_28" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_28" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_28" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_28" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_28" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_28" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_28" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_29" width="75">
+						<Label text="29" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_29" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_29" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_29" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_29" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_29" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_29" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_29" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_29" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_29" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+					<VerticalLayout name="ver_zidan_num_30" width="75">
+						<Label text="30" height="30" textcolor="0xFFFFFFFF" align="center" valign="vcenter"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_delay_30" maxchar="4" numberonly="true" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_delay_up_btn_30" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_delay_down_btn_30" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<Control height="80" bkimage="res='skins/zidan.png' dest='0,11,13,62'"/>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="73" padding="0,3,0,3" bkimage="skins/spin_x_1.png">
+									<Button name="zidan_x_up_btn_30" width="16" hotimage="res='skins/spin_x_2.png' source='0,0,16,24'" pushedimage="res='skins/spin_x_2.png' source='0,0,16,24'" />
+									<Edit name="edit_zidan_x_30" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<Button name="zidan_x_down_btn_30" width="16" hotimage="res='skins/spin_x_2.png' source='57,0,73,24'" pushedimage="res='skins/spin_x_2.png' source='57,0,73,24'" padding="2,0,0,0"/>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Control/>
+								<HorizontalLayout width="50" padding="0,3,0,3" bkimage="skins/spin_1.png">
+									<Edit name="edit_zidan_y_30" maxchar="4" width="38" padding="1,1,0,1" font="4" align="center" valign="venter"/>
+									<VerticalLayout>
+										<Button name="zidan_y_up_btn_30" height="11" hotimage="res='skins/spin_2.png' source='39,1,49,12'" pushedimage="res='skins/spin_2.png' source='39,1,49,12'" padding="0,1,1,0"/>
+										<Button name="zidan_y_down_btn_30" height="11" hotimage="res='skins/spin_2.png' source='39,12,49,23'" pushedimage="res='skins/spin_2.png' source='39,12,49,23'" padding="0,0,1,1" />
+									</VerticalLayout>
+								</HorizontalLayout>
+							<Control/>
+						</HorizontalLayout>
+					</VerticalLayout>
+					
+				</HorizontalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+	</HorizontalLayout>
+</Window>

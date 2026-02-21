@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="548,388" caption="0,0,0,75" bktrans="true">
+	<VerticalLayout name="root" bkcolor="0xCF000000" bordersize="1" bordercolor="0xFF26bbee">
+		<Control height="10"/>
+		<HorizontalLayout height="22">
+			<Control/>
+			<Button name="exit_btn" width="22" normalimage="skins/close_1.png" hotimage="skins/close_2.png" pushedimage="skins/close_2.png"/>
+			<Control width="10"/>
+		</HorizontalLayout>
+		
+		<Label text="select_gun_title_text" resourcetext="true" height="30" width="300" align="left" valign="vcenter" textcolor="0xFFFFFFFF" padding="30,-20,0,0"/>
+		
+		<HorizontalLayout height="280">
+			<Control width="30"/>
+			<VerticalLayout width="200">
+				<Combo name="gun_combo" height="34" style="combo_style" dropbox="bordercolor=&quot;0xFF26bbee&quot; bordersize=&quot;1&quot; bkcolor=&quot;#FF000000&quot;"/>
+				<List name="gun_list" width="200" header="hidden" vscrollbar="true" itemalign="left" itemvalign="vcenter" itemtextpadding="10,0,0,0" itemtextcolor="0xFFFFFFFF" itemselectedbkcolor="0xFF26bbee" itemhotbkcolor="0x7F26bbee" itempushedbkcolor="0xFF26bbee" bordersize="1" bordercolor="0xFF26bbee" padding="0,5,0,0"/>
+			</VerticalLayout>
+			<Control width="50"/>
+			<VerticalLayout>
+				<Control/>
+				<HorizontalLayout height="30">
+					<Label text="gun_color_text" resourcetext="true" autocalcwidth="true" align="left" valign="vcenter" textcolor="0xFFFFFFFF"/>
+					<Button name="btn_gun_color" width="30" bkcolor="0xFFFF0000" normalimage="skins/colorbox_1.png" hotimage="skins/colorbox_2.png" pushedimage="skins/colorbox_2.png"/>
+				</HorizontalLayout>
+				<Control/>
+			</VerticalLayout>
+			<VerticalLayout padding="0,30,0,0" visible="false">
+				<Control/>
+				<HorizontalLayout height="40">
+					<VerticalLayout width="18">
+						<Control/>
+						<Option name="repeat_1" height="18" normalimage="skins/checkbox_1.png" hotimage="skins/checkbox_2.png" pushedimage="skins/checkbox_2.png" selectedimage="skins/checkbox_3.png" group="repeat_mode_group"/>
+						<Control/>
+					</VerticalLayout>
+					<Label text="repeat_mode_1_text" padding="5,0,0,0," resourcetext="true" align="left" valign="vcenter" wordbreak="true" textcolor="0xFFFFFFFF"/>
+				</HorizontalLayout>
+				<Control/>
+				<HorizontalLayout height="40">
+					<VerticalLayout width="18">
+						<Control/>
+						<Option name="repeat_2" height="18" normalimage="skins/checkbox_1.png" hotimage="skins/checkbox_2.png" pushedimage="skins/checkbox_2.png" selectedimage="skins/checkbox_3.png" group="repeat_mode_group"/>
+						<Control/>
+					</VerticalLayout>
+					<Label text="repeat_mode_2_text" padding="5,0,0,0," resourcetext="true" align="left" valign="vcenter" wordbreak="true" textcolor="0xFFFFFFFF"/>
+				</HorizontalLayout>
+				<Control/>
+				<HorizontalLayout height="40">
+					<VerticalLayout width="18">
+						<Control/>
+						<Option name="repeat_3" height="18" normalimage="skins/checkbox_1.png" hotimage="skins/checkbox_2.png" pushedimage="skins/checkbox_2.png" selectedimage="skins/checkbox_3.png" group="repeat_mode_group"/>
+						<Control/>
+					</VerticalLayout>
+					<Label text="repeat_mode_3_text" padding="5,0,0,0," resourcetext="true" align="left" valign="vcenter" wordbreak="true" textcolor="0xFFFFFFFF"/>
+				</HorizontalLayout>
+				<Control/>
+			</VerticalLayout>
+		</HorizontalLayout>
+		
+		
+		<Control/>
+		<HorizontalLayout height="25">
+			<Control/>
+			<Button name="ok_btn" text="ok_text" style="center_button" width="100"
+				bordersize="1" bordercolor="0xFF26bbee" hotbkcolor="0x7F26bbee" pushedbkcolor="0xFF26bbee"/>
+				
+			<Button name="cancel_btn" text="cancel_text" style="center_button" width="100" padding="20,0,0,0"
+				bordersize="1" bordercolor="0xFF26bbee" hotbkcolor="0x7F26bbee" pushedbkcolor="0xFF26bbee"/>	
+			<Control/>
+		</HorizontalLayout>	
+		<Control height="10"/>
+   </VerticalLayout>
+</Window>
