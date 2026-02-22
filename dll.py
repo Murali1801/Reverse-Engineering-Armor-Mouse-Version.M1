@@ -18,7 +18,7 @@ start_time = time.perf_counter()
 
 # POLLING_RATE: USB report rate in Hz (How often the mouse talks to the PC).
 # Valid Options: 1000 (1ms), 500 (2ms), 250 (4ms), or 125 (8ms).
-POLLING_RATE = 1000
+POLLING_RATE = 250 
 
 # KEY_RESPONSE_MS: Hardware switch debounce time. Prevents accidental double clicks.
 # Range: 4ms (Hyper-fast, prone to double clicks) to 26ms (Safe/Slow).
